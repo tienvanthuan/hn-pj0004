@@ -1,0 +1,74 @@
+@use '../../settings/_variable' as v;
+@use '../../settings/_mixin' as r;
+@use '../../settings/_path' as p;
+
+.p-news {
+	&1 {
+	}
+
+	&2 {
+		padding: 124px 0 87px;
+
+		@include r.sp {
+			padding: 60px 0;
+		}
+		.c-list1 {
+			&__item {
+				&:first-of-type {
+					width: 100%;
+
+					.c-list1 {
+						&__link {
+							display: flex;
+							align-items: flex-start;
+
+							@include r.sp {
+								display: block;
+							}
+						}
+
+						&__img {
+							width: 35%;
+							padding-top: 22%;
+
+							@include r.sp {
+								width: 100%;
+								padding-top: 63%;
+							}
+						}
+
+						&__detail {
+							width: 65%;
+							padding-left: 5%;
+
+							@include r.sp {
+								width: 100%;
+								padding-left: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.c-pagi {
+			margin-top: 60px;
+		}
+	}
+
+	&3 {
+		padding: 60px 0 120px;
+
+		@include r.sp {
+			padding: 30px 0 60px;
+		}
+
+		.c-content1 {
+			margin: 60px 0 90px;
+
+			@include r.sp {
+			margin: 30px 0 70px;
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+@use '../settings/variable'as v;
+@use '../settings/mixin'as r;
+@use '../settings/_path'as p;
+
+/*------------------------------------------------------------
+form
+------------------------------------------------------------*/
+.c-form1 {
+	max-width: 700px;
+	border-radius: 10px;
+	padding: 40px;
+	box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.2);
+	background-color: v.$color1;
+
+	@include r.sp {
+		padding: 40px 20px;
+		width: 100%;
+	}
+
+	&__ttl1 {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	&__text1 {
+		font-weight: 500;
+	}
+
+	&__wrapper {
+		margin-top: 40px;
+	}
+
+	&__flex {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin-bottom: 20px;
+
+		dt {
+			width: 150px;
+			padding-top: 5px;
+
+			@include r.sp {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+		dd {
+			width: calc(100% - 150px);
+
+			@include r.sp {
+				width: 100%;
+			}
+		}
+	}
+
+	&__input {
+		width: 100%;
+		border: 1px solid #ccc;
+		font-size: 1.6rem;
+		@include r.shipporiMincho();
+		padding: 7px;
+		outline-color: v.$base-color;
+
+		@include r.sp {
+			font-size: 1.4rem;
+			padding: 5px;
+		}
+	}
+
+	textarea {
+		resize: none;
+		height: 200px;
+	}
+
+	.c-btn-wrapper {
+		margin-top: 40px;
+	}
+}
+
+
+.mw_wp_form_confirm {
+	.c-form1__flex {
+		dt {
+			padding-top: 0;
+		}
+	}
+}

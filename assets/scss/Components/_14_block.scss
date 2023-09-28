@@ -1,0 +1,293 @@
+@use "../settings/variable"as v;
+@use "../settings/mixin"as r;
+@use "../settings/_path"as p;
+
+/*------------------------------------------------------------
+block
+------------------------------------------------------------*/
+.c-block1 {
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+	$root: &;
+
+	&__item {
+		width: 220px;
+		text-align: center;
+	}
+
+	&__main1 {
+		position: absolute;
+		top: calc(50% - 39px);
+		left: calc(50% - 104px);
+		width: 208px;
+
+		@include r.sp {
+			width: 150px;
+			left: calc(50% - 75px);
+			top: calc(50% - 28px);
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+
+		&.is-top {
+			margin-bottom: 165px;
+		}
+	}
+
+	&__inner {
+		position: relative;
+		width: 88px;
+		height: 88px;
+		border-radius: 100%;
+		background-color: v.$color1;
+		margin: 0 auto;
+		overflow: hidden;
+
+		@include r.sp {
+			width: 70px;
+			height: 70px;
+		}
+
+		img{
+			position: absolute;
+			max-width: 70px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__text1 {
+		font-size: 2.8rem;
+		font-weight: 700;
+		@include r.notoSerifJp();
+		color: v.$color1;
+		margin-top: 5px;
+
+		@include r.sp {
+			font-size: 1.6rem;
+		}
+	}
+
+	&.is-style2 {
+		#{$root} {
+			&__inner {
+				background: rgba($color: v.$base-color, $alpha: 0.2);
+			}
+
+			&__text1 {
+				color: v.$text-color;
+			}
+		}
+	}
+}
+
+.c-block2 {
+	&__text1 {
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__img {
+		max-width: 685px;
+		margin: 30px auto 0;
+	}
+}
+
+.c-block3 {
+	position: relative;
+	padding: 80px 0;
+
+	@include r.sp {
+		padding: 340px 0 0;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: calc(100% - 285px);
+		z-index: -1;
+
+		@include r.sp {
+			width: 100%;
+			height: 400px;
+		}
+	}
+
+	&__inner {
+		max-width: 550px;
+		padding: 30px 40px;
+		box-shadow: 0 3px 6px #cccccc;
+		margin-left: auto;
+		margin-right: 0;
+		background-color: v.$color1;
+
+		@include r.sp {
+			padding: 20px;
+			max-width: 100%;
+			margin: 0 20px;
+		}
+	}
+
+	&__text1 {
+		margin-top: 10px;
+	}
+}
+
+.c-block4 {
+
+	@include r.sp {
+		padding: 0 20px;
+	}
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: calc(50% + 540px);
+		margin-left: auto;
+		margin-right: 0;
+		align-items: flex-start;
+
+		& + & {
+			margin-top: 150px;
+
+			@include r.sp {
+				margin-top: 50px;
+			}
+		}
+
+		&:nth-child(2n) {
+			flex-direction: row-reverse;
+			margin-right: auto;
+			margin-left: 0;
+
+			.c-block4 {
+
+				&__content {
+					padding-right: 0;
+					padding-left: 50px;
+
+					@include r.sp {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__content {
+		width: 42.858%;
+		padding-right: 50px;
+
+		@include r.sp {
+			width: 100%;
+			padding-right: 0;
+		}
+	}
+
+	&__text1 {
+		margin-top: 10px;
+	}
+
+	&__img {
+		width: 57.142%;
+
+		@include r.sp {
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+}
+
+.c-block5 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__inner {
+		width: 48%;
+	}
+}
+
+.c-block6 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__gallery {
+		width: 55%;
+
+		@include r.sp {
+			width: 100%;
+		}
+	}
+	&__information {
+		width: 40%;
+		padding-left: 20px;
+
+		@include r.sp {
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+
+	&__ttl1 {
+		font-size: 3rem;
+		font-weight: 700;
+
+		@include r.sp {
+			font-size: 2.2rem;
+		}
+	}
+
+	&__table {
+		margin-top: 30px;
+		dl {
+			display: flex;
+			margin-bottom: 10px;
+
+			dt {
+				position: relative;
+				width: 120px;
+				font-weight: 700;
+			}
+
+			dd {
+				width: calc(100% - 120px);
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.c-block7 {
+	counter-reset: block7;
+	&__inner {
+		margin-bottom: 20px;
+	}
+
+	&__ttl1 {
+		position: relative;
+		font-weight: 700;
+		padding-left: 20px;
+
+		&::before {
+			counter-increment: block7;
+			content: counter(block7) ".";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__text1 {}
+}

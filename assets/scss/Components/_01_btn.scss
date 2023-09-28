@@ -1,0 +1,120 @@
+@use "../settings/variable"as v;
+@use "../settings/mixin"as r;
+@use "../settings/_path"as p;
+
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+.c-btn1 {
+	position: relative;
+	display: block;
+	border: 1px solid v.$base-color;
+	background-color: v.$color1;
+	width: 310px;
+	color: v.$base-color;
+	padding: 18px 40px;
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+
+	@include r.sp {
+		width: 270px;
+		padding: 15px 40px;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		background: url(p.$path + "/images/common/icon/icon-arrow-right.svg") center center/ 20px 13px no-repeat;
+		width: 20px;
+		height: 14px;
+		top: calc(50% - 7px);
+		right: 40px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	@include r.hover {
+		opacity: 1;
+		color: v.$color1;
+		background-color: v.$base-color;
+
+		&::after {
+			background-image: url(p.$path + "images/common/icon/icon-arrow-right--white.svg");
+		}
+	}
+
+	&.is-input {
+		padding: 0;
+		input {
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			@include r.shipporiMincho();
+			font-weight: 400;
+			font-size: 16px;
+			padding: 18px 40px;
+			cursor: pointer;
+		}
+
+		@include r.hover {
+			input {
+				color: v.$color1;
+			}
+		}
+	}
+
+	&.is-center {
+		margin: 0 auto;
+	}
+}
+
+.c-btn2 {
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid v.$base-color;
+	background-color: v.$base-color;
+	color: v.$color1;
+	font-weight: 500;
+	padding: 10px 20px;
+	position: relative;
+	width: 240px;
+	transition: all 0.3s ease-in-out;
+
+	&::after {
+		content: "";
+		position: absolute;
+		background: url(p.$path + "/images/common/icon/icon-arrow-right--white.svg") center center/ 20px 13px no-repeat;
+		width: 20px;
+		height: 14px;
+		top: calc(50% - 7px);
+		right: 20px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	@include r.hover {
+		opacity: 1;
+		color: v.$base-color;
+		background-color: v.$color1;
+
+		&::after {
+			background-image: url(p.$path + "images/common/icon/icon-arrow-right.svg");
+			right: 15px;
+		}
+	}
+}
+
+.c-btn3 {
+	text-decoration: underline;
+	background: transparent;
+	@include r.shipporiMincho();
+  font-weight: 400;
+  font-size: 16px;
+	cursor: pointer;
+
+	@include r.sp {
+		font-size: 1.4rem;
+	}
+
+	@include r.hover {
+		text-decoration: none;
+	}
+}

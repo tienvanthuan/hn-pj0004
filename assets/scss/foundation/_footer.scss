@@ -1,0 +1,84 @@
+@use '../settings/variable' as v;
+@use '../settings/mixin' as r;
+@use '../settings/_path' as p;
+
+// .l-footer{}
+.c-footer {
+	background: url(p.$path + "/images/common/bg-footer.jpg") top center/ cover no-repeat;
+	&__inner {
+		display: flex;
+		align-items: flex-start;
+		padding: 50px 0 74px;
+
+		@include r.sp {
+			flex-direction: column;
+			padding: 50px 20px 74px;
+		}
+	}
+
+	&__block {
+		width: 300px;
+		margin-right: auto;
+
+		@include r.sp {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__logo {
+		display: block;
+		width: 144px;
+	}
+
+	&__information {
+		width: 300px;
+		border-top: 1px solid v.$color2;
+		margin-top: 15px;
+		padding-top: 10px;
+	}
+
+	&__text1 {
+		font-size: 1.4rem;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: flex-start;
+
+		@include r.sp {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+
+	&__menu1 {
+		min-width: 200px;
+
+		@include r.sp {
+			min-width: auto;
+			margin-right: 40px;
+		}
+	}
+
+	&__item {
+		margin-bottom: 10px;
+	}
+
+	&__link {
+		color: v.$base-color;
+		font-weight: 500;
+	}
+
+	&__copyright {
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: 600;
+		padding: 10px 0;
+		background-color: v.$base-color;
+		color: v.$color1;
+
+		@include r.sp {
+			font-size: 1.2rem;
+		}
+	}
+}

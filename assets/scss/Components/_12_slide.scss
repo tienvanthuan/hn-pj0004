@@ -1,0 +1,73 @@
+@use '../settings/variable'as v;
+@use '../settings/mixin'as r;
+@use '../settings/_path'as p;
+
+/*------------------------------------------------------------
+slider
+------------------------------------------------------------*/
+.c-slider1 {
+	padding-bottom: 60px !important;
+
+	@include r.sp {
+		padding-bottom: 50px !important;
+	}
+}
+
+.c-slider2 {
+	padding-bottom: 60px !important;
+
+	@include r.sp {
+		padding-bottom: 50px !important;
+	}
+
+	&__item {
+		@include r.transition();
+		opacity: 0.5;
+
+		@include r.pc {
+			margin-top: 20px;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		&.swiper-slide-active {
+			margin-top: 0;
+			opacity: 1;
+		}
+	}
+}
+
+.c-slider3 {
+	&__main {
+		.swiper-wrapper {
+			.swiper-slide {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__nav {}
+}
+
+.swiper-pagination {
+	.swiper-pagination-bullet {
+		width: 12px;
+		height: 12px;
+		margin: 0 3px !important;
+		background: v.$color1;
+		border: 1px solid v.$base-color;
+
+		@include r.sp {
+			width: 9px;
+			height: 9px;
+		}
+
+		&-active {
+			background-color: v.$base-color;
+		}
+	}
+}

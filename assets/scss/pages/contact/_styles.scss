@@ -1,0 +1,97 @@
+@use '../../settings/_variable' as v;
+@use '../../settings/_mixin' as r;
+@use '../../settings/_path' as p;
+
+.p-contact {
+	&1 {
+		.c-mv2 {
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&2 {
+		padding: 60px 0 140px;
+
+		@include r.sp {
+			padding: 60px 0;
+		}
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+
+		&__block {
+			&1 {
+				width: calc(100% - 700px);
+
+				@include r.sp {
+					width: 100%;
+				}
+
+				.c-title1 {
+					text-align: left;
+				}
+			}
+
+			&2 {
+				width: 700px;
+
+				@include r.sp {
+					width: 100%;
+				}
+
+				&__ttl1 {
+					font-size: 2rem;
+					font-weight: 500;
+				}
+
+				.c-form1 {
+					position: relative;
+					margin-top: -120px;
+					z-index: 1;
+
+					@include r.sp {
+						margin-top: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	&.is-completed {
+		.p-contact {
+			&2 {
+				&__block {
+					&2 {
+						.c-form1 {
+							margin-top: 0;
+
+							@include r.sp {
+								margin-top: 40px;
+							}
+
+							.c-btn1 {
+								margin-top: 50px;
+
+								@include r.sp {
+									margin-top: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

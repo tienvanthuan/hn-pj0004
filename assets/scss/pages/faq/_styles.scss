@@ -1,0 +1,12 @@
+@use '../../settings/_variable' as v;
+@use '../../settings/_mixin' as r;
+@use '../../settings/_path' as p;
+
+.p-faq {
+	&1 {
+	}
+
+	&2 {
+		padding: 70px 0 136px;
+	}
+}

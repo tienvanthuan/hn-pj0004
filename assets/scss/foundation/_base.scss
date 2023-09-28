@@ -1,0 +1,170 @@
+@use '../settings/mixin'as r;
+@use '../settings/variable'as v;
+@use '../settings/_path'as p;
+
+// @use '../../../node_modules/sanitize.css/sanitize.css';
+// @use '../../../node_modules/sanitize.css/forms.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+th {
+  font-weight: inherit;
+}
+
+address {
+  font-style: inherit;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  @include r.hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha(opacity=80)";
+  }
+}
+
+img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+
+button,
+input,
+select,
+textarea {
+  padding: 0;
+  border: 0;
+}
+
+button:not(:disabled):not([aria-disabled='true']) {
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+	position: relative;
+  @include r.shipporiMincho();
+  font-weight: 400;
+  font-size: 16px;
+	min-width: 1120px;
+	line-height: 1.75;
+	letter-spacing: 0.5px;
+
+	@include r.sp {
+		min-width: 100%;
+		font-size: 1.4rem;
+	}
+}
+
+// Safari用のハックは、Chromeに適用されないようにする
+@supports (-webkit-touch-callout: none) {
+  body {
+    // Safari用のハック
+    height: -webkit-fill-available;
+  }
+}
+
+[v-cloak] {
+  visibility: hidden;
+}
+
+.l-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.pc {
+  @include r.mq(mdless) {
+    display: none !important;
+  }
+}
+
+.sp {
+  @include r.mq(mdover) {
+    display: none !important;
+  }
+}
+
+.l-container {
+	max-width: 1120px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.l-container2 {
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+// フェードイン
+.fadeIn {
+  opacity: 0;
+  transition: 1s;
+  &.is-show {
+    opacity: 1;
+  }
+}
+
+// フェードインアップ
+.fadeInUp {
+  opacity: 0;
+  transition: 1s;
+  transform: translate(0, 50px);
+  transition-duration: 0.8s;
+  &.is-show {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+// ズームイン
+.zoomIn {
+  opacity: 0;
+  transition: 1s;
+  transform: scale(0.6);
+  &.is-show {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

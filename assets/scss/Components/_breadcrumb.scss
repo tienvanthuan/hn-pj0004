@@ -1,0 +1,37 @@
+@use '../settings/variable'as v;
+@use '../settings/mixin'as r;
+@use '../settings/_path'as p;
+
+/*------------------------------------------------------------
+breadcrumb
+------------------------------------------------------------*/
+.c-breadcrumb {
+	display: flex;
+	align-items: center;
+	&__item {
+		white-space: nowrap;
+		&:not(:last-of-type) {
+			&::after {
+				content: ">";
+				display: inline-block;
+				color: v.$color2;
+				margin: 0 5px;
+				font-size: 1.15rem;
+			}
+		}
+		&:last-of-type {
+			overflow: hidden;
+    	text-overflow: ellipsis;
+		}
+	}
+
+	&__text {
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		&:not(span) {
+			color: v.$base-color;
+		}
+	}
+}

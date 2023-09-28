@@ -1,0 +1,12 @@
+@use '../settings/variable'as v;
+@use '../settings/mixin'as r;
+@use '../settings/_path'as p;
+
+//utility
+// .u-xxx {}
+.u-tel {
+  @include r.pc {
+		pointer-events: none;
+		touch-action: none;
+	}
+}

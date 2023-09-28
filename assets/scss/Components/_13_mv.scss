@@ -1,0 +1,142 @@
+@use "../settings/variable"as v;
+@use "../settings/mixin"as r;
+@use "../settings/_path"as p;
+
+/*------------------------------------------------------------
+mv
+------------------------------------------------------------*/
+.c-mv1 {
+	position: relative;
+	height: 100vh;
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	@include r.sp {
+		min-height: 670px;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($color: v.$base-color, $alpha: 0.2);
+	}
+
+	&__ttl1 {
+		font-size: 3.2rem;
+		font-weight: 700;
+		@include r.notoSerifJp();
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: v.$color1;
+		text-align: center;
+		z-index: 2;
+
+		@include r.sp {
+			width: 100%;
+			font-size: 2rem;
+			padding: 0 30px;
+			top: 40%;
+		}
+	}
+
+	&__weather {
+		position: absolute;
+		width: 288px;
+		border-radius: 10px;
+		padding: 24px;
+		background: rgba($color: v.$color1, $alpha: 0.6);
+		bottom: 84px;
+		right: 32px;
+		z-index: 2;
+
+		@include r.sp {
+			bottom: 130px;
+			right: auto;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__text2 {
+		position: relative;
+		font-size: 1.4rem;
+		font-weight: 500;
+		padding-left: 26px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			background: url(p.$path + "images/common/icon/icon-clock.svg") center center/ 18px 18px no-repeat;
+			left: 0;
+			top: calc(50% - 9px);
+		}
+	}
+
+	&__text3 {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 700;
+		background-color: v.$color1;
+		border-radius: 5px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+
+	.c-navi1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+.c-mv2 {
+	position: relative;
+	height: 350px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include r.sp {
+		height: 230px;
+	}
+
+	&__ttl1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 6rem;
+		font-weight: 700;
+		@include r.notoSerifJp();
+		color: v.$color1;
+		z-index: 3;
+		width: 100%;
+		text-align: center;
+
+		@include r.sp {
+			font-size: 3.3rem;
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($color: v.$base-color, $alpha: 0.2);
+		z-index: 2;
+	}
+}

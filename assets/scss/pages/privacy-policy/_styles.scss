@@ -1,0 +1,16 @@
+@use '../../settings/_variable' as v;
+@use '../../settings/_mixin' as r;
+@use '../../settings/_path' as p;
+
+.p-pp {
+	&1 {
+	}
+
+	&2 {
+		padding: 64px 0 85px;
+
+		@include r.sp {
+			padding: 60px 0;
+		}
+	}
+}

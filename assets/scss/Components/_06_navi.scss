@@ -1,0 +1,69 @@
+@use '../settings/variable'as v;
+@use '../settings/mixin'as r;
+@use '../settings/_path'as p;
+
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+
+.c-navi1 {
+	display: flex;
+	align-items: center;
+	background-color: v.$base-color;
+	padding: 16px 48px;
+
+	@include r.sp {
+		padding: 10px 20px;
+		flex-wrap: wrap;
+	}
+
+	&__ttl1 {
+		position: relative;
+		padding-left: 24px;
+		width: 90px;
+
+		@include r.sp {
+			margin-bottom: 0px;
+			width: 100%;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: calc(50% - 8px);
+			width: 16px;
+			height: 16px;
+			background: url(p.$path + "images/common/icon/icon-notice.svg") center center/ 16px 16px no-repeat;
+		}
+	}
+
+	&__ttl1, &__date, &__ttl2 {
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: v.$color1;
+	}
+
+	&__ttl2 {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	&__link {
+		display: flex;
+		align-items: flex-start;
+		margin-left: 10px;
+		overflow: hidden;
+		width: calc(100% - 100px);
+
+		@include r.sp {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	&__date {
+		margin-right: 20px;
+	}
+}
