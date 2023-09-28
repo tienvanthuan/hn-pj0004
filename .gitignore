@@ -1,0 +1,11 @@
+node_modules/
+public/
+
+root/wp-content/uploads/
+root/wp-content/cache/
+root/wp-content/ewww/
+
+root/wp-content/themes/wp/assets/
+
+.DS_Store
+.idea/

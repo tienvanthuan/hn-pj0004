@@ -1,0 +1,11 @@
+public
+config
+node_modules
+gulpfile.js
+*.config.js
+*.md
+*.php
+package-lock.json
+.vscode
+db
+root
