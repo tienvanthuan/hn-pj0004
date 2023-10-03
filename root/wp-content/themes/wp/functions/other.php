@@ -119,3 +119,7 @@ function my_acf_op_init() {
         ));
     }
 }
+
+
+/* Disable WordPress Admin Bar for all users */
+add_filter( 'show_admin_bar', '__return_false' );

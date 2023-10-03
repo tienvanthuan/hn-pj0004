@@ -2,9 +2,11 @@
 
 <body class="page-<?php echo $pageid ?>">
 
+<?php if (is_front_page() || is_home()):?>
 <div class="c-loading js-loading is-loading">
 	<span class="c-loading__logo"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo-o.svg" alt="MIZUKI"></span>
 </div>
+<?php endif;?>
 
 <div class="l-wrapper">
 
@@ -20,19 +22,19 @@
 			<div class="c-header__navmenu js-navmenu">
 				<ul class="c-header__menu">
 					<li class="c-header__item">
-						<a href="<?php echo home_url(); ?>/about/" class="c-header__link"><?php _e('ABOUT','mizuki');?></a>
+						<a href="<?php echo home_url('/'); ?>about/" class="c-header__link"><?php _e('ABOUT','mizuki');?></a>
 					</li>
 					<li class="c-header__item">
-						<a href="<?php echo home_url(); ?>/products/" class="c-header__link"><?php _e('PRODUCTS','mizuki');?></a>
+						<a href="<?php echo home_url('/'); ?>products/" class="c-header__link"><?php _e('PRODUCTS','mizuki');?></a>
 					</li>
 					<li class="c-header__item">
-						<a href="<?php echo home_url(); ?>/projects/" class="c-header__link"><?php _e('PROJECTS','mizuki');?></a>
+						<a href="<?php echo home_url('/'); ?>projects/" class="c-header__link"><?php _e('PROJECTS','mizuki');?></a>
 					</li>
 					<li class="c-header__item">
-						<a href="<?php echo home_url(); ?>/news/" class="c-header__link"><?php _e('NEWS','mizuki');?></a>
+						<a href="<?php echo home_url('/'); ?>news/" class="c-header__link"><?php _e('NEWS','mizuki');?></a>
 					</li>
 					<li class="c-header__item">
-						<a href="<?php echo home_url(); ?>/contact/" class="c-header__link"><?php _e('CONTACT','mizuki');?></a>
+						<a href="<?php echo home_url('/'); ?>contact/" class="c-header__link"><?php _e('CONTACT','mizuki');?></a>
 					</li>
 				</ul>
 			</div>
