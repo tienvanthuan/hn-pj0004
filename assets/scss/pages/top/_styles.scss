@@ -102,6 +102,20 @@
 			@include r.sp {
 				margin-bottom: 40px;
 			}
+
+			&__item {
+				&:nth-child(1) {
+					@include r.pc {
+						margin-top: 50px;
+					}
+				}
+
+				&:nth-child(2) {
+					@include r.pc {
+						margin-top: 25px;
+					}
+				}
+			}
 		}
 	}
 
@@ -196,6 +210,14 @@
 				@include r.sp {
 					margin: 30px 0 60px;
 				}
+			}
+		}
+
+		.c-gallery1 {
+			margin-bottom: 130px;
+
+			@include r.sp {
+				margin-bottom: 50px;
 			}
 		}
 	}

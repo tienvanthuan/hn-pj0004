@@ -1,0 +1,150 @@
+Oct 26 2023 14:36:40
+{"Number":8192,"Message":"explode(): Passing null to parameter #2 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-content\\plugins\\all-in-one-wp-migration\\functions.php","Line":342}
+
+Oct 26 2023 14:36:40
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:36:41
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:36:42
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:37:53
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:37:55
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:37:56
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:37:57
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:41:28
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:41:30
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:41:41
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:41:52
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:42:03
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:42:14
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:42:25
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:42:36
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:42:47
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:42:58
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:43:09
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:43:18
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:43:20
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"rtrim(): Passing null to parameter #1 ($string) of type string is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\formatting.php","Line":2772}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"Creation of dynamic property Ai1wm_Database_Mysqli::$old_replace_raw_values is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database.php","Line":304}
+
+Oct 26 2023 14:43:22
+{"Number":8192,"Message":"Creation of dynamic property Ai1wm_Database_Mysqli::$new_replace_raw_values is deprecated","File":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database.php","Line":325}
+
+Oct 26 2023 14:43:29
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+
+Oct 26 2023 14:43:33
+{"type":8192,"message":"Return type of Requests_Utility_CaseInsensitiveDictionary::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\Requests\\Utility\\CaseInsensitiveDictionary.php","line":91}
+
+Oct 26 2023 14:43:42
+{"type":8192,"message":"Creation of dynamic property WP_Block_Type::$skip_inner_blocks is deprecated","file":"C:\\xampp\\htdocs\\tvtlabs\\hn-pj0004\\root\\wp-includes\\class-wp-block-type.php","line":391}
+

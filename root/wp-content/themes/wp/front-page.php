@@ -43,26 +43,6 @@ $topSection2Item4Content = $topSection2Item4['item4_content'];
 							<p class="c-mv1__text3"><?php if(!empty($openingHours)) :?><?php echo $openingHours;?><?php else:?>00:00<?php endif;?>~<?php if(!empty($closingHours)) :?><?php echo $closingHours;?><?php else:?>00:00<?php endif;?></p>
 							<a href="<?php echo home_url(); ?>/contact/" class="c-btn2"><?php _e('CONTACT NOW','mizuki');?></a>
 						</div>
-						<div class="c-navi1">
-							<h2 class="c-navi1__ttl1"><?php _e('NEWS','mizuki');?></h2>
-							<?php
-								$news_query = new WP_Query();
-								$news_param = array(
-									'post_type' => 'news',
-									'posts_per_page' => '1'
-								);
-								$news_query->query($news_param);
-								if($news_query->have_posts()): while($news_query->have_posts()) : $news_query->the_post();
-							?>
-							<a href="<?php the_permalink(); ?>" class="c-navi1__link">
-								<time class="c-navi1__date" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
-								<p class="c-navi1__ttl2"><?php echo the_title();?></p>
-							</a>
-							<?php endwhile;?>
-								<?php else: ?>
-								<p class="c-text1"><?php _e('There are currently no posts.','mizuki');?></p>
-							<?php endif; wp_reset_query();?>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -154,50 +134,6 @@ $topSection2Item4Content = $topSection2Item4['item4_content'];
 			</div>
 
 			<div class="p-top__item">
-				<div class="p-top4">
-					<div class="p-top4__inner">
-						<h3 class="c-title1"><?php _e('NEWS','mizuki');?></h3>
-						<?php
-							$news_query = new WP_Query();
-							$news_param = array(
-								'post_type' => 'news',
-							);
-							$news_query->query($news_param);
-							if($news_query->have_posts()):
-						?>
-						<div class="c-slider1 swiper js-slide1">
-							<ul class="c-list1 swiper-wrapper is-slide">
-								<?php while($news_query->have_posts()) : $news_query->the_post();?>
-								<li class="c-list1__item swiper-slide">
-									<a href="<?php the_permalink(); ?>" class="c-list1__link">
-										<div class="c-list1__img">
-											<?php if (has_post_thumbnail()): ?>
-												<?php the_post_thumbnail('products-thumbnail'); ?>
-											<?php else:?>
-												<img src="<?php echo get_template_directory_uri() ?>/assets/images/common/img-comingsoon.jpg" alt="MIZUKI">
-											<?php endif?>
-										</div>
-										<div class="c-list1__detail">
-											<time class="c-list1__cat1" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
-											<p class="c-list1__text1"><?php the_title()?></p>
-											<p class="c-list1__text2"><span>Detail</span></p>
-										</div>
-									</a>
-								</li>
-								<?php endwhile;?>
-							</ul>
-							<div class="swiper-pagination"></div>
-						</div>
-						<?php else: ?>
-							<p class="c-text1"><?php _e('There are currently no posts.','mizuki');?></p>
-						<?php endif; wp_reset_query();?>
-
-						<a href="<?php echo home_url(); ?>/news/" class="c-btn1 is-center"><?php _e('VIEW MORE','mizuki');?></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="p-top__item">
 				<div class="p-top5">
 					<div class="p-top5__inner">
 						<h3 class="c-title1"><?php _e('PROJECTS','mizuki');?></h3>
@@ -241,23 +177,21 @@ $topSection2Item4Content = $topSection2Item4['item4_content'];
 			<div class="p-top__item">
 				<div class="p-top6">
 					<div class="p-top6__inner">
-					<h3 class="c-title1"><?php _e('PARTNER','mizuki');?></h3>
-
-						<?php if( have_rows('partners', 'option') ):?>
-						<div class="c-slider3 swiper js-slide3">
-							<ul class="c-slider3__wrapper swiper-wrapper is-slide">
-								<?php while( have_rows('partners', 'option') ) : the_row();
-									$logoPartner = get_sub_field('logo_partner');
-								?>
-								<li class="c-slider3__item swiper-slide">
-									<figure>
-										<img src="<?php echo esc_url($logoPartner['url']); ?>" alt="<?php echo esc_attr($logoPartner['alt']); ?>">
-									</figure>
+						<div class="c-gallery1__block1">
+							<?php $images = get_field('top_gallery', 'option');
+							if( $images ):?>
+							<ul class="c-gallery1">
+								<?php $x = 1; while ( $x <= 2):?>
+								<?php foreach( $images as $image ): ?>
+								<li class="c-gallery1__item">
+								<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								</li>
-								<?php endwhile;?>
+								<?php endforeach; ?>
+								<?php $x++; endwhile;?>
 							</ul>
+							<?php endif;?>
+
 						</div>
-						<?php endif;?>
 
 						<?php include(get_template_directory().'/includes/footer.php');?>
 					</div>
